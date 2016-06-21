@@ -36,20 +36,23 @@ namespace Sample_ProcessMonitor
             var process = Process.GetProcesses();
             foreach (var proc in process)
             {
-                Console.WriteLine(proc.ProcessName);
+                Console.WriteLine("Name: {0}\nID: {1}\n ", proc.ProcessName, proc.Id);
             }
         }
 
         private static void ShowProcessByName(string procName)
         {
             var process = Process.GetProcessesByName(procName);
-            Console.WriteLine(process);
+            foreach (var proc in process)
+            {
+                Console.WriteLine("Name: {0}\nID: {1}\n ", proc.ProcessName, proc.Id);
+            }
         }
 
         private static void ShowProcessById(int procId)
         {
             var process = Process.GetProcessById(procId);
-            Console.WriteLine(process);
+            Console.WriteLine("Name: {0}\nId: {1}", process.ProcessName, process.Id);
         }
     }
 }
