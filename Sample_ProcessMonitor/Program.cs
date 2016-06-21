@@ -61,7 +61,7 @@ namespace Sample_ProcessMonitor
                 var process = Process.GetProcessById(procId);
                 Console.WriteLine("Name: {0}\nId: {1}", process.ProcessName, process.Id);
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 Console.WriteLine("No process found with provided Id");
             }
@@ -69,7 +69,7 @@ namespace Sample_ProcessMonitor
 
         private static void ShowCommands()
         {
-            Console.WriteLine("'show' => shows all process running on the local machine" );
+            Console.WriteLine("'show' => shows all processes running on the local machine" );
             Console.WriteLine("'name' => shows all processes running with the provided name");
             Console.WriteLine("'id' => shows the process with a provided process id");
         }
