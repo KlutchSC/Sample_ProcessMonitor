@@ -1,6 +1,5 @@
 C:\Users\joe.andrews\Documents\Other Projects\Sample_ProcessMonitor\Sample_ProcessMonitor\bin\Debug\Sample_ProcessMonitor.exe.config
 C:\Users\joe.andrews\Documents\Other Projects\Sample_ProcessMonitor\Sample_ProcessMonitor\bin\Debug\Sample_ProcessMonitor.exe
 C:\Users\joe.andrews\Documents\Other Projects\Sample_ProcessMonitor\Sample_ProcessMonitor\bin\Debug\Sample_ProcessMonitor.pdb
-C:\Users\joe.andrews\Documents\Other Projects\Sample_ProcessMonitor\Sample_ProcessMonitor\obj\Debug\Sample_ProcessMonitor.csprojResolveAssemblyReference.cache
 C:\Users\joe.andrews\Documents\Other Projects\Sample_ProcessMonitor\Sample_ProcessMonitor\obj\Debug\Sample_ProcessMonitor.exe
 C:\Users\joe.andrews\Documents\Other Projects\Sample_ProcessMonitor\Sample_ProcessMonitor\obj\Debug\Sample_ProcessMonitor.pdb

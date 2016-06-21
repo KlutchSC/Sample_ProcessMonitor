@@ -26,6 +26,11 @@ namespace Sample_ProcessMonitor
                     ShowProcessById(Convert.ToInt32(Console.ReadLine()));
                 }
 
+                if (Console.ReadLine() == "help")
+                {
+                    ShowCommands();
+                }
+
                 if (Console.ReadLine() == "quit")
                     break;
             }
@@ -51,8 +56,22 @@ namespace Sample_ProcessMonitor
 
         private static void ShowProcessById(int procId)
         {
-            var process = Process.GetProcessById(procId);
-            Console.WriteLine("Name: {0}\nId: {1}", process.ProcessName, process.Id);
+            try
+            {
+                var process = Process.GetProcessById(procId);
+                Console.WriteLine("Name: {0}\nId: {1}", process.ProcessName, process.Id);
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine("No process found with provided Id");
+            }
+        }
+
+        private static void ShowCommands()
+        {
+            Console.WriteLine("'show' => shows all process running on the local machine" );
+            Console.WriteLine("'name' => shows all processes running with the provided name");
+            Console.WriteLine("'id' => shows the process with a provided process id");
         }
     }
 }
